@@ -1,3 +1,4 @@
+// Makes the grid
 function grid(grids = 16, pixels = 256) {
     for(let i = 0; i < pixels; i++) {
         let alpha = 0.1;
@@ -15,7 +16,7 @@ function grid(grids = 16, pixels = 256) {
     }
     return document.getElementById("gridSize").textContent = `${grids} x ${grids}`;
 }
-
+// Change grid size
 size.addEventListener("click", function() {
     while(container.firstChild) {
         document.getElementById("container").firstChild.remove()
